@@ -1,2 +1,1 @@
-# MinPlug
-Minecraft Plugins 
+There are some test Minecraft Plugins.
