@@ -1,0 +1,75 @@
+name: Element
+version: '1.0-SNAPSHOT'
+main: mc.prism.element.main
+api-version: 1.16
+authors: [ Hayaisa ]
+description: The plugin make players use element.
+
+commands:
+  eleop:
+    #描述
+    description: "OP Commands"
+    #用法
+    usage: "/eleop <args>"
+    #权限节点
+    permission: element.*
+    #没有权限时发送的消息
+    permission-message: "§6[元素]§f没有权限" #§
+
+
+  elemenu:
+      description: "Open elements menu"
+      usage: "/elemenu <args>"
+      permission: element.menu
+      permission-message: "§6[元素]§f没有权限"
+
+#权限节点列表
+permissions:
+  #所有权限
+  element.*:
+    #权限描述
+    description: "All permission for the plugin"
+    #权限
+    default: op
+    #子
+    children:
+      - element.create
+      - element.remove
+      - element.menu
+      - element.open
+      - element.close
+
+  #创建元素类
+  element.create:
+    description: "Create elements(Only for OPs)"
+    default: op
+
+  #移除元素类
+  element.remove:
+    description: "Remove elements(Only for OPs)"
+    default: op
+
+  #元素列表
+  element.menu:
+    description: "Open the elements menu"
+    default: true
+    #这边可以打开一个菜单 但是我没想好怎么搞 以后再弄吧
+
+  #调用元素(开关)
+  element.open:
+    description: "Open use elements"
+    default: true
+    #想法：保持使用元素开启
+
+  #不调用元素(开关)
+  element.close:
+    description: "close use elements"
+    default: true
+    #想法：保持不使用元素
+
+
+
+
+
+
+

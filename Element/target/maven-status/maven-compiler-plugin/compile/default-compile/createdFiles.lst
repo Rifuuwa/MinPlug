@@ -1,0 +1,9 @@
+mc\prism\element\command\elemenu.class
+mc\prism\element\command\eleopen.class
+mc\prism\element\listeners\PlayerJoin.class
+mc\prism\element\command\eleclose.class
+mc\prism\element\main.class
+mc\prism\element\PlayerHand.class
+mc\prism\element\command\elecreate.class
+mc\prism\element\command\eleremove.class
+mc\prism\element\command\eleop.class
